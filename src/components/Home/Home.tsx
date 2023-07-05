@@ -36,7 +36,7 @@ const Home = () => {
       gap='1rem'
       justifyContent='center'
       alignItems='center'
-      padding='1rem'
+      padding='0 1rem '
       className='home-container'
       height='100vh'
     >
