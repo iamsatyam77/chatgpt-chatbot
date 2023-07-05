@@ -11,15 +11,15 @@ const Chat = () => {
     <Stack
       direction='column'
       gap='1rem'
-      justifyContent='space-between'
+      // justifyContent='space-between'
       alignItems='center'
       padding='1rem'
       className='chat-container'
     >
-      <Stack direction='column' gap='1rem'>
-        <ChatHeader />
-        <ChatArea />
-      </Stack>
+      {/* <Stack direction='column' gap='1rem'> */}
+      <ChatHeader />
+      <ChatArea />
+      {/* </Stack> */}
       <Message />
     </Stack>
   );
