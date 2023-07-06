@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 import { AuthContextProvider } from "./state/Auth/Auth";
 import Require from "./auth/Require";
 
@@ -19,6 +20,14 @@ const Router = () => {
                 <LazyChat />
               </Suspense>
             </Require>
+          }
+        />
+        <Route
+          path='*'
+          element={
+            <Suspense fallback='Loading.....'>
+              <PageNotFound />
+            </Suspense>
           }
         />
       </Routes>
